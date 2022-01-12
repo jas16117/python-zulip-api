@@ -49,6 +49,7 @@ class ConverterHandler:
                """
 
     def handle_message(self, message: Dict[str, str], bot_handler: BotHandler) -> None:
+        print("bot request data:", message, bot_handler)
         bot_response = get_bot_converter_response(message, bot_handler)
         bot_handler.send_reply(message, bot_response)
 
