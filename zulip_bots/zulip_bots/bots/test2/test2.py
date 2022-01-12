@@ -15,7 +15,7 @@ class JsLeadHandler:
         """
 
     def handle_message(self, message: Dict[str, Any], bot_handler: BotHandler) -> None:
-        # print("sender data:", message)
+        print("sender data:", message)
 
         content = "beep boop"  # type: str
         bot_handler.send_reply(message, content)
